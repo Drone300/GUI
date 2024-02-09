@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import *
-from BLackJack import table
+from BlackJack import table
 
 def button(win):
     frame = Frame(win)
