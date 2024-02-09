@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import *
-from BlackJack import table
+from BLackJack import table
 
 def button(win):
     frame = Frame(win)
@@ -13,11 +13,10 @@ def button(win):
     greenbutton.pack( side = LEFT )
     redbutton = Button(bottomframe, text ='BattleShip', fg ='DarkRed',font="Arial")
     redbutton.pack( side = LEFT )
+    
 def main():
     win = tk.Tk()
-    bg = PhotoImage(file="Blavck Hole 1.png")
-    label1 = Label(win, image=bg)
-    label1.place(x=0, y=0)
+    win['bg']="green"
     win.title('Retro Arcade')
     win.geometry("500x600")
     win.resizable(0,0)
